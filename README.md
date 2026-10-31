@@ -1,6 +1,6 @@
 # GradeFix Backend
 
-**Student:** Muhire Pacific  
+**Student:** MUHIRE Pacifique  
 **Student ID:** 27604  
 **Project:** GradeFix
 
