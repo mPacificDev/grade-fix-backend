@@ -22,6 +22,6 @@ public interface GradeClaimRepository extends JpaRepository<GradeClaim, UUID> {
     @Query("SELECT g.status, COUNT(g) FROM GradeClaim g GROUP BY g.status")
     List<Object[]> statsByStatus();
     @Modifying
-    @Query("UPDATE GradeClaim g SET g.status = collage.edu.gradefix.domain.ClaimStatus.DISMISSED WHERE g.lecturer.id = :lecturerId AND g.claimDate = :date AND g.status <> collage.edu.gradefix.domain.ClaimStatus.RESOLVED")
+    @Query("UPDATE GradeClaim g SET g.status = college.edu.gradefix.domain.ClaimStatus.DISMISSED WHERE g.lecturer.id = :lecturerId AND g.claimDate = :date AND g.status <> college.edu.gradefix.domain.ClaimStatus.RESOLVED")
     int cancelClaims(@Param("lecturerId") UUID lecturerId,@Param("date") LocalDate date);
 }

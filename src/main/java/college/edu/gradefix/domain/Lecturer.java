@@ -3,6 +3,8 @@ package college.edu.gradefix.domain;
 import jakarta.persistence.*;
 import java.util.*;
 
+@Entity
+@Table(name = "lecturer")
 public class Lecturer {
     @Id
     @GeneratedValue (strategy=GenerationType.UUID)

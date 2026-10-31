@@ -13,7 +13,7 @@ import college.edu.gradefix.domain.GradeCorrection;
 
 @Repository
 public interface GradeCorrectionRepository extends JpaRepository<GradeCorrection, UUID> {
-    @Query("SELECT c FROM GradeCorrection c WHERE c.gradeClaim.student.regNumber = :regNumber ORDER BY c.correctedDate DESC")
+    @Query("SELECT c FROM GradeCorrection c WHERE c.gradeClaim.student.regNumber = :regNumber ORDER BY c.correctionDate DESC")
     List<GradeCorrection> findHistoryByRegNumber(@Param("regNumber") String regNumber);
     boolean existsByGradeClaim(GradeClaim gradeClaim);
 }
