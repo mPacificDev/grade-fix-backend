@@ -1,0 +1,3033 @@
+{
+  "info": {
+    "_postman_id": "d9cb5b61-bfca-4ab4-a591-1a9cc6960857",
+    "name": "grade-fix-midterm.postman_collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "51989914"
+  },
+  "item": [
+    {
+      "name": "course",
+      "item": [
+        {
+          "name": "save",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\":\"Operating Systems\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/courses/save",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "courses",
+                "save"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "retrieve",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5000/api/courses/all",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "courses",
+                "all"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Staff-rooms",
+      "item": [
+        {
+          "name": "save",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"roomNumber\":304,\"name\":\"Room 304\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/staff-rooms/save",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "staff-rooms",
+                "save"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "save",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"roomNumber\":304,\"name\":\"Room 304\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:5000/api/staff-rooms/save",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "staff-rooms",
+                    "save"
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "text",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain;charset=UTF-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "29"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 31 Oct 2026 22:06:46 GMT"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=60"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": "Staff room saved successfully"
+            }
+          ]
+        },
+        {
+          "name": "retrieve",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"fullName\": \"GASASIRA Albert\",\r\n  \"email\": \"mpacificdev@gmail.com\",\r\n  \"password\": \"Albert@\",\r\n  \"role\": \"LECTURER\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/staff-rooms/all",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "staff-rooms",
+                "all"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "retrieve",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"fullName\": \"GASASIRA Albert\",\r\n  \"email\": \"mpacificdev@gmail.com\",\r\n  \"password\": \"Albert@\",\r\n  \"role\": \"LECTURER\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:5000/api/staff-rooms/all",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "staff-rooms",
+                    "all"
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "333"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 31 Oct 2026 22:07:52 GMT"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=60"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": "[\n  {\n    \"id\": \"3afa3a89-71f0-4259-bb34-2b3e07518338\",\n    \"name\": \"Room 301\",\n    \"roomNumber\": \"301\"\n  },\n  {\n    \"id\": \"b918ae55-0427-43e8-9716-2b1d28e3aa54\",\n    \"name\": \"Room 302\",\n    \"roomNumber\": \"302\"\n  },\n  {\n    \"id\": \"989a0214-7d5a-4d33-a7f5-0dd0a5cb44ee\",\n    \"name\": \"Room 303\",\n    \"roomNumber\": \"303\"\n  },\n  {\n    \"id\": \"bff11994-2a61-4333-9100-a42c3422640e\",\n    \"name\": \"Room 304\",\n    \"roomNumber\": \"304\"\n  }\n]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lecturers",
+      "item": [
+        {
+          "name": "save",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"firstName\":\"Eric\",\r\n  \"lastName\":\"Habimana\",\r\n  \"email\":\"eric.habimana@college.edu\",\r\n  \"staffRoom\":{\"id\":\"989a0214-7d5a-4d33-a7f5-0dd0a5cb44ee\"},\r\n  \"courses\":[]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/lecturers/save",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "lecturers",
+                "save"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "save",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"firstName\":\"Eric\",\r\n  \"lastName\":\"Habimana\",\r\n  \"email\":\"eric.habimana@college.edu\",\r\n  \"staffRoom\":{\"id\":\"989a0214-7d5a-4d33-a7f5-0dd0a5cb44ee\"},\r\n  \"courses\":[]\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:5000/api/lecturers/save",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "lecturers",
+                    "save"
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "text",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain;charset=UTF-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "27"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 31 Oct 2026 22:19:38 GMT"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=60"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": "Lecturer saved successfully"
+            }
+          ]
+        },
+        {
+          "name": "retrieve",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5000/api/lecturers/all",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "lecturers",
+                "all"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "retrieve",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/api/lecturers/all",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "lecturers",
+                    "all"
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "700"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 31 Oct 2026 22:20:26 GMT"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=60"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": "[\n  {\n    \"courses\": [],\n    \"email\": \"aline.mukamana@college.com\",\n    \"firstName\": \"Aline\",\n    \"id\": \"ec83d7d0-efa7-4148-942d-63a5ba72eff1\",\n    \"lastName\": \"Mukamana\",\n    \"staffRoom\": {\n      \"id\": \"3afa3a89-71f0-4259-bb34-2b3e07518338\",\n      \"name\": \"Room 301\",\n      \"roomNumber\": \"301\"\n    }\n  },\n  {\n    \"courses\": [],\n    \"email\": \"jean.niyonsenga@college.edu\",\n    \"firstName\": \"Jean\",\n    \"id\": \"2c78e0eb-3cb3-4056-9525-ff4870465d72\",\n    \"lastName\": \"Niyonsenga\",\n    \"staffRoom\": {\n      \"id\": \"b918ae55-0427-43e8-9716-2b1d28e3aa54\",\n      \"name\": \"Room 302\",\n      \"roomNumber\": \"302\"\n    }\n  },\n  {\n    \"courses\": [],\n    \"email\": \"eric.habimana@college.edu\",\n    \"firstName\": \"Eric\",\n    \"id\": \"b1195f36-0954-4395-bd30-9d8a83368b54\",\n    \"lastName\": \"Habimana\",\n    \"staffRoom\": {\n      \"id\": \"989a0214-7d5a-4d33-a7f5-0dd0a5cb44ee\",\n      \"name\": \"Room 303\",\n      \"roomNumber\": \"303\"\n    }\n  }\n]"
+            }
+          ]
+        },
+        {
+          "name": "assign_course",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5000/api/lecturers/{{lecturerJeanId}}/courses/{{courseDataStructuresId}}",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "lecturers",
+                "{{lecturerJeanId}}",
+                "courses",
+                "{{courseDataStructuresId}}"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "assign_course",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/api/lecturers/{{lecturerJeanId}}/courses/{{courseDataStructuresId}}",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "lecturers",
+                    "{{lecturerJeanId}}",
+                    "courses",
+                    "{{courseDataStructuresId}}"
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "text",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain;charset=UTF-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "28"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 31 Oct 2026 22:26:08 GMT"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=60"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": "Course added to the lecturer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Students",
+      "item": [
+        {
+          "name": "save",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"firstName\":\"Happy\",\r\n    \"lastName\":\"Uwineza\",\r\n    \"regNumber\":\"24-2275\",\r\n    \"email\":\"happy.uwineza.std@college.edu\",\r\n    \"group\":\"SE-D\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/students/save",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "students",
+                "save"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "save",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"firstName\":\"Happy\",\r\n    \"lastName\":\"Uwineza\",\r\n    \"regNumber\":\"24-2275\",\r\n    \"email\":\"happy.uwineza.std@college.edu\",\r\n    \"group\":\"SE-D\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:5000/api/students/save",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "students",
+                    "save"
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "text",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain;charset=UTF-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "26"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 31 Oct 2026 22:38:25 GMT"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=60"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": "Student saved successfully"
+            }
+          ]
+        },
+        {
+          "name": "retrieve",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"fullName\": \"GASASIRA Albert\",\r\n  \"email\": \"mpacificdev@gmail.com\",\r\n  \"password\": \"Albert@\",\r\n  \"role\": \"LECTURER\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/students/all",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "students",
+                "all"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "retrieve",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"fullName\": \"GASASIRA Albert\",\r\n  \"email\": \"mpacificdev@gmail.com\",\r\n  \"password\": \"Albert@\",\r\n  \"role\": \"LECTURER\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:5000/api/students/all",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "students",
+                    "all"
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "817"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 31 Oct 2026 22:39:44 GMT"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=60"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": "[\n  {\n    \"email\": \"kennedy.manzi.std@college.edu\",\n    \"firstName\": \"Kennedy\",\n    \"group\": \"SE-C\",\n    \"id\": \"8cf9d556-f605-4ae6-94dc-dba6a1f370e0\",\n    \"lastName\": \"Manzi\",\n    \"regNumber\": \"24-2271\"\n  },\n  {\n    \"email\": \"aline.mutesi.std@college.edu\",\n    \"firstName\": \"Aline\",\n    \"group\": \"SE-C\",\n    \"id\": \"3c0305eb-1497-415e-88c3-d1aba5684734\",\n    \"lastName\": \"Mutesi\",\n    \"regNumber\": \"24-2272\"\n  },\n  {\n    \"email\": \"eric.mbonyi.std@college.edu\",\n    \"firstName\": \"Eric\",\n    \"group\": \"SE-A\",\n    \"id\": \"7ee4bb55-ab52-4295-a34b-16b23b762445\",\n    \"lastName\": \"Mbonyi\",\n    \"regNumber\": \"24-2273\"\n  },\n  {\n    \"email\": \"gordon.muhirwa.std@college.edu\",\n    \"firstName\": \"Gordon\",\n    \"group\": \"SE-B\",\n    \"id\": \"c40ce8fb-aab2-43f3-acb0-8e9880021741\",\n    \"lastName\": \"Muhirwa\",\n    \"regNumber\": \"24-2274\"\n  },\n  {\n    \"email\": \"happy.uwineza.std@college.edu\",\n    \"firstName\": \"Happy\",\n    \"group\": \"SE-D\",\n    \"id\": \"a64e16b2-cb86-4f84-a128-49a82dc090a3\",\n    \"lastName\": \"Uwineza\",\n    \"regNumber\": \"24-2275\"\n  }\n]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Grade-claims",
+      "item": [
+        {
+          "name": "file_claims",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"claimDate\":\"2026-11-11\",\r\n    \"status\":\"SUBMITTED\",\r\n    \"assessmentItem\":\"Data Structures Assignment\",\r\n    \"description\":\"Claim 10 - verify assignment mark\",\r\n    \"student\":\r\n    {\r\n        \"id\":\"{{studentAlineId}}\"\r\n    },\r\n        \"lecturer\":{\"id\":\"{{lecturerJeanId}}\"\r\n    }\r\n    \r\n    }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/grade-claims/save",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "grade-claims",
+                "save"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "file_claims",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"claimDate\":\"2026-11-11\",\r\n    \"status\":\"SUBMITTED\",\r\n    \"assessmentItem\":\"Data Structures Assignment\",\r\n    \"description\":\"Claim 10 - verify assignment mark\",\r\n    \"student\":\r\n    {\r\n        \"id\":\"{{studentAlineId}}\"\r\n    },\r\n        \"lecturer\":{\"id\":\"{{lecturerJeanId}}\"\r\n    }\r\n    \r\n    }",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:5000/api/grade-claims/save",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "grade-claims",
+                    "save"
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "text",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain;charset=UTF-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "30"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 31 Oct 2026 23:01:42 GMT"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=60"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": "Grade claim saved successfully"
+            }
+          ]
+        },
+        {
+          "name": "retrieve",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5000/api/grade-claims/all",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "grade-claims",
+                "all"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "retrieve",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/api/grade-claims/all",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "grade-claims",
+                    "all"
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "6762"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 31 Oct 2026 23:03:03 GMT"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=60"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": "[\n  {\n    \"assessmentItem\": \"Assignment 1\",\n    \"claimDate\": \"2026-11-02\",\n    \"description\": \"Claim 01 - review assignment mark\",\n    \"id\": \"48332e35-3023-40ad-b59d-ee3c8f28678f\",\n    \"lecturer\": {\n      \"courses\": [\n        {\n          \"id\": \"1b66f508-aa1f-46de-991d-61d11dead71e\",\n          \"name\": \"Web Technology\"\n        },\n        {\n          \"id\": \"60d3e572-b790-4ab3-84ec-7b63abec05c4\",\n          \"name\": \"Database Systems\"\n        }\n      ],\n      \"email\": \"aline.mukamana@college.com\",\n      \"firstName\": \"Aline\",\n      \"id\": \"ec83d7d0-efa7-4148-942d-63a5ba72eff1\",\n      \"lastName\": \"Mukamana\",\n      \"staffRoom\": {\n        \"id\": \"3afa3a89-71f0-4259-bb34-2b3e07518338\",\n        \"name\": \"Room 301\",\n        \"roomNumber\": \"301\"\n      }\n    },\n    \"status\": \"SUBMITTED\",\n    \"student\": {\n      \"email\": \"kennedy.manzi.std@college.edu\",\n      \"firstName\": \"Kennedy\",\n      \"group\": \"SE-C\",\n      \"id\": \"8cf9d556-f605-4ae6-94dc-dba6a1f370e0\",\n      \"lastName\": \"Manzi\",\n      \"regNumber\": \"24-2271\"\n    }\n  },\n  {\n    \"assessmentItem\": \"Quiz 1\",\n    \"claimDate\": \"2026-11-03\",\n    \"description\": \"Claim 02 - check quiz mark\",\n    \"id\": \"7bf6ba9c-268e-44e5-81d8-e52c7fb74812\",\n    \"lecturer\": {\n      \"courses\": [\n        {\n          \"id\": \"1b66f508-aa1f-46de-991d-61d11dead71e\",\n          \"name\": \"Web Technology\"\n        },\n        {\n          \"id\": \"60d3e572-b790-4ab3-84ec-7b63abec05c4\",\n          \"name\": \"Database Systems\"\n        }\n      ],\n      \"email\": \"aline.mukamana@college.com\",\n      \"firstName\": \"Aline\",\n      \"id\": \"ec83d7d0-efa7-4148-942d-63a5ba72eff1\",\n      \"lastName\": \"Mukamana\",\n      \"staffRoom\": {\n        \"id\": \"3afa3a89-71f0-4259-bb34-2b3e07518338\",\n        \"name\": \"Room 301\",\n        \"roomNumber\": \"301\"\n      }\n    },\n    \"status\": \"SUBMITTED\",\n    \"student\": {\n      \"email\": \"aline.mutesi.std@college.edu\",\n      \"firstName\": \"Aline\",\n      \"group\": \"SE-C\",\n      \"id\": \"3c0305eb-1497-415e-88c3-d1aba5684734\",\n      \"lastName\": \"Mutesi\",\n      \"regNumber\": \"24-2272\"\n    }\n  },\n  {\n    \"assessmentItem\": \"Assignment 2\",\n    \"claimDate\": \"2026-11-04\",\n    \"description\": \"Claim 03 - confirm assignment result\",\n    \"id\": \"6a2b44e1-4153-4bd0-aea6-0f04a030815d\",\n    \"lecturer\": {\n      \"courses\": [\n        {\n          \"id\": \"1b66f508-aa1f-46de-991d-61d11dead71e\",\n          \"name\": \"Web Technology\"\n        },\n        {\n          \"id\": \"60d3e572-b790-4ab3-84ec-7b63abec05c4\",\n          \"name\": \"Database Systems\"\n        }\n      ],\n      \"email\": \"aline.mukamana@college.com\",\n      \"firstName\": \"Aline\",\n      \"id\": \"ec83d7d0-efa7-4148-942d-63a5ba72eff1\",\n      \"lastName\": \"Mukamana\",\n      \"staffRoom\": {\n        \"id\": \"3afa3a89-71f0-4259-bb34-2b3e07518338\",\n        \"name\": \"Room 301\",\n        \"roomNumber\": \"301\"\n      }\n    },\n    \"status\": \"SUBMITTED\",\n    \"student\": {\n      \"email\": \"kennedy.manzi.std@college.edu\",\n      \"firstName\": \"Kennedy\",\n      \"group\": \"SE-C\",\n      \"id\": \"8cf9d556-f605-4ae6-94dc-dba6a1f370e0\",\n      \"lastName\": \"Manzi\",\n      \"regNumber\": \"24-2271\"\n    }\n  },\n  {\n    \"assessmentItem\": \"Database Lab\",\n    \"claimDate\": \"2026-11-05\",\n    \"description\": \"Claim 04 - correct lab mark\",\n    \"id\": \"bf234847-1081-4b84-93aa-8f7d20d9f200\",\n    \"lecturer\": {\n      \"courses\": [\n        {\n          \"id\": \"478bf199-5ac8-4156-9fde-86515308197b\",\n          \"name\": \"Data Structures\"\n        }\n      ],\n      \"email\": \"jean.niyonsenga@college.edu\",\n      \"firstName\": \"Jean\",\n      \"id\": \"2c78e0eb-3cb3-4056-9525-ff4870465d72\",\n      \"lastName\": \"Niyonsenga\",\n      \"staffRoom\": {\n        \"id\": \"b918ae55-0427-43e8-9716-2b1d28e3aa54\",\n        \"name\": \"Room 302\",\n        \"roomNumber\": \"302\"\n      }\n    },\n    \"status\": \"SUBMITTED\",\n    \"student\": {\n      \"email\": \"kennedy.manzi.std@college.edu\",\n      \"firstName\": \"Kennedy\",\n      \"group\": \"SE-C\",\n      \"id\": \"8cf9d556-f605-4ae6-94dc-dba6a1f370e0\",\n      \"lastName\": \"Manzi\",\n      \"regNumber\": \"24-2271\"\n    }\n  },\n  {\n    \"assessmentItem\": \"Data Structures Test\",\n    \"claimDate\": \"2026-11-06\",\n    \"description\": \"Claim 05 - verify test mark\",\n    \"id\": \"debfe82a-90ca-4557-a2ed-2613503da529\",\n    \"lecturer\": {\n      \"courses\": [\n        {\n          \"id\": \"478bf199-5ac8-4156-9fde-86515308197b\",\n          \"name\": \"Data Structures\"\n        }\n      ],\n      \"email\": \"jean.niyonsenga@college.edu\",\n      \"firstName\": \"Jean\",\n      \"id\": \"2c78e0eb-3cb3-4056-9525-ff4870465d72\",\n      \"lastName\": \"Niyonsenga\",\n      \"staffRoom\": {\n        \"id\": \"b918ae55-0427-43e8-9716-2b1d28e3aa54\",\n        \"name\": \"Room 302\",\n        \"roomNumber\": \"302\"\n      }\n    },\n    \"status\": \"SUBMITTED\",\n    \"student\": {\n      \"email\": \"aline.mutesi.std@college.edu\",\n      \"firstName\": \"Aline\",\n      \"group\": \"SE-C\",\n      \"id\": \"3c0305eb-1497-415e-88c3-d1aba5684734\",\n      \"lastName\": \"Mutesi\",\n      \"regNumber\": \"24-2272\"\n    }\n  },\n  {\n    \"assessmentItem\": \"Operating Systems Quiz\",\n    \"claimDate\": \"2026-11-07\",\n    \"description\": \"Claim 06 - review quiz result\",\n    \"id\": \"12338ad8-98d2-44cd-bce4-93ea9ea7951a\",\n    \"lecturer\": {\n      \"courses\": [],\n      \"email\": \"eric.habimana@college.edu\",\n      \"firstName\": \"Eric\",\n      \"id\": \"b1195f36-0954-4395-bd30-9d8a83368b54\",\n      \"lastName\": \"Habimana\",\n      \"staffRoom\": {\n        \"id\": \"989a0214-7d5a-4d33-a7f5-0dd0a5cb44ee\",\n        \"name\": \"Room 303\",\n        \"roomNumber\": \"303\"\n      }\n    },\n    \"status\": \"SUBMITTED\",\n    \"student\": {\n      \"email\": \"eric.mbonyi.std@college.edu\",\n      \"firstName\": \"Eric\",\n      \"group\": \"SE-A\",\n      \"id\": \"7ee4bb55-ab52-4295-a34b-16b23b762445\",\n      \"lastName\": \"Mbonyi\",\n      \"regNumber\": \"24-2273\"\n    }\n  },\n  {\n    \"assessmentItem\": \"Assignment 3\",\n    \"claimDate\": \"2026-11-08\",\n    \"description\": \"Claim 07 - check recorded mark\",\n    \"id\": \"d5d28611-47a8-4128-a991-bcefbbc832d5\",\n    \"lecturer\": {\n      \"courses\": [\n        {\n          \"id\": \"1b66f508-aa1f-46de-991d-61d11dead71e\",\n          \"name\": \"Web Technology\"\n        },\n        {\n          \"id\": \"60d3e572-b790-4ab3-84ec-7b63abec05c4\",\n          \"name\": \"Database Systems\"\n        }\n      ],\n      \"email\": \"aline.mukamana@college.com\",\n      \"firstName\": \"Aline\",\n      \"id\": \"ec83d7d0-efa7-4148-942d-63a5ba72eff1\",\n      \"lastName\": \"Mukamana\",\n      \"staffRoom\": {\n        \"id\": \"3afa3a89-71f0-4259-bb34-2b3e07518338\",\n        \"name\": \"Room 301\",\n        \"roomNumber\": \"301\"\n      }\n    },\n    \"status\": \"SUBMITTED\",\n    \"student\": {\n      \"email\": \"gordon.muhirwa.std@college.edu\",\n      \"firstName\": \"Gordon\",\n      \"group\": \"SE-B\",\n      \"id\": \"c40ce8fb-aab2-43f3-acb0-8e9880021741\",\n      \"lastName\": \"Muhirwa\",\n      \"regNumber\": \"24-2274\"\n    }\n  },\n  {\n    \"assessmentItem\": \"Database Quiz\",\n    \"claimDate\": \"2026-11-09\",\n    \"description\": \"Claim 08 - review database quiz\",\n    \"id\": \"19e7a45e-9f51-49fc-802e-e0feb665ec11\",\n    \"lecturer\": {\n      \"courses\": [\n        {\n          \"id\": \"478bf199-5ac8-4156-9fde-86515308197b\",\n          \"name\": \"Data Structures\"\n        }\n      ],\n      \"email\": \"jean.niyonsenga@college.edu\",\n      \"firstName\": \"Jean\",\n      \"id\": \"2c78e0eb-3cb3-4056-9525-ff4870465d72\",\n      \"lastName\": \"Niyonsenga\",\n      \"staffRoom\": {\n        \"id\": \"b918ae55-0427-43e8-9716-2b1d28e3aa54\",\n        \"name\": \"Room 302\",\n        \"roomNumber\": \"302\"\n      }\n    },\n    \"status\": \"SUBMITTED\",\n    \"student\": {\n      \"email\": \"happy.uwineza.std@college.edu\",\n      \"firstName\": \"Happy\",\n      \"group\": \"SE-D\",\n      \"id\": \"a64e16b2-cb86-4f84-a128-49a82dc090a3\",\n      \"lastName\": \"Uwineza\",\n      \"regNumber\": \"24-2275\"\n    }\n  },\n  {\n    \"assessmentItem\": \"Final Project\",\n    \"claimDate\": \"2026-11-10\",\n    \"description\": \"Claim 09 - correct project mark\",\n    \"id\": \"12253306-f635-4aea-9665-f53fd9f89290\",\n    \"lecturer\": {\n      \"courses\": [],\n      \"email\": \"eric.habimana@college.edu\",\n      \"firstName\": \"Eric\",\n      \"id\": \"b1195f36-0954-4395-bd30-9d8a83368b54\",\n      \"lastName\": \"Habimana\",\n      \"staffRoom\": {\n        \"id\": \"989a0214-7d5a-4d33-a7f5-0dd0a5cb44ee\",\n        \"name\": \"Room 303\",\n        \"roomNumber\": \"303\"\n      }\n    },\n    \"status\": \"SUBMITTED\",\n    \"student\": {\n      \"email\": \"kennedy.manzi.std@college.edu\",\n      \"firstName\": \"Kennedy\",\n      \"group\": \"SE-C\",\n      \"id\": \"8cf9d556-f605-4ae6-94dc-dba6a1f370e0\",\n      \"lastName\": \"Manzi\",\n      \"regNumber\": \"24-2271\"\n    }\n  },\n  {\n    \"assessmentItem\": \"Data Structures Assignment\",\n    \"claimDate\": \"2026-11-11\",\n    \"description\": \"Claim 10 - verify assignment mark\",\n    \"id\": \"24b4f40f-014f-40e7-b9ae-62bd5af09297\",\n    \"lecturer\": {\n      \"courses\": [\n        {\n          \"id\": \"478bf199-5ac8-4156-9fde-86515308197b\",\n          \"name\": \"Data Structures\"\n        }\n      ],\n      \"email\": \"jean.niyonsenga@college.edu\",\n      \"firstName\": \"Jean\",\n      \"id\": \"2c78e0eb-3cb3-4056-9525-ff4870465d72\",\n      \"lastName\": \"Niyonsenga\",\n      \"staffRoom\": {\n        \"id\": \"b918ae55-0427-43e8-9716-2b1d28e3aa54\",\n        \"name\": \"Room 302\",\n        \"roomNumber\": \"302\"\n      }\n    },\n    \"status\": \"SUBMITTED\",\n    \"student\": {\n      \"email\": \"aline.mutesi.std@college.edu\",\n      \"firstName\": \"Aline\",\n      \"group\": \"SE-C\",\n      \"id\": \"3c0305eb-1497-415e-88c3-d1aba5684734\",\n      \"lastName\": \"Mutesi\",\n      \"regNumber\": \"24-2272\"\n    }\n  }\n]"
+            }
+          ]
+        },
+        {
+          "name": "Set-claim-statuses",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5000/api/grade-claims/{{claim09}}/status?status=RESOLVED",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "grade-claims",
+                "{{claim09}}",
+                "status"
+              ],
+              "query": [
+                {
+                  "key": "status",
+                  "value": "RESOLVED"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Set-claim-statuses",
+              "originalRequest": {
+                "method": "PATCH",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/api/grade-claims/{{claim09}}/status?status=RESOLVED",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "grade-claims",
+                    "{{claim09}}",
+                    "status"
+                  ],
+                  "query": [
+                    {
+                      "key": "status",
+                      "value": "RESOLVED"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "text",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain;charset=UTF-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "39"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 31 Oct 2026 23:13:32 GMT"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=60"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": "Grade claim status updated successfully"
+            }
+          ]
+        },
+        {
+          "name": "move_claim_dates",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"claimDate\":\"2026-10-20\",\"status\":\"SUBMITTED\",\"assessmentItem\":\"Quiz 1\",\"description\":\"Claim 02 - check quiz mark\",\"student\":{\"id\":\"{{studentAlineId}}\"},\"lecturer\":{\"id\":\"{{lecturerAlineId}}\"}}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/grade-claims/update/{{claim02}}",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "grade-claims",
+                "update",
+                "{{claim02}}"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "move_claim_dates",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\"claimDate\":\"2026-10-20\",\"status\":\"SUBMITTED\",\"assessmentItem\":\"Quiz 1\",\"description\":\"Claim 02 - check quiz mark\",\"student\":{\"id\":\"{{studentAlineId}}\"},\"lecturer\":{\"id\":\"{{lecturerAlineId}}\"}}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:5000/api/grade-claims/update/{{claim02}}",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "grade-claims",
+                    "update",
+                    "{{claim02}}"
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 31 Oct 2026 23:23:44 GMT"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=60"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"assessmentItem\": \"Quiz 1\",\n  \"claimDate\": \"2026-10-20\",\n  \"description\": \"Claim 02 - check quiz mark\",\n  \"id\": \"7bf6ba9c-268e-44e5-81d8-e52c7fb74812\",\n  \"lecturer\": {\n    \"courses\": [\n      {\n        \"id\": \"1b66f508-aa1f-46de-991d-61d11dead71e\",\n        \"name\": \"Web Technology\"\n      },\n      {\n        \"id\": \"60d3e572-b790-4ab3-84ec-7b63abec05c4\",\n        \"name\": \"Database Systems\"\n      }\n    ],\n    \"email\": \"aline.mukamana@college.com\",\n    \"firstName\": \"Aline\",\n    \"id\": \"ec83d7d0-efa7-4148-942d-63a5ba72eff1\",\n    \"lastName\": \"Mukamana\",\n    \"staffRoom\": {\n      \"id\": \"3afa3a89-71f0-4259-bb34-2b3e07518338\",\n      \"name\": \"Room 301\",\n      \"roomNumber\": \"301\"\n    }\n  },\n  \"status\": \"SUBMITTED\",\n  \"student\": {\n    \"email\": \"aline.mutesi.std@college.edu\",\n    \"firstName\": \"Aline\",\n    \"group\": \"SE-C\",\n    \"id\": \"3c0305eb-1497-415e-88c3-d1aba5684734\",\n    \"lastName\": \"Mutesi\",\n    \"regNumber\": \"24-2272\"\n  }\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Queries",
+      "item": [
+        {
+          "name": "PART-B",
+          "item": [
+            {
+              "name": "B1",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/api/students/by-group?group=se-c",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "students",
+                    "by-group"
+                  ],
+                  "query": [
+                    {
+                      "key": "group",
+                      "value": "se-c"
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "B1",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost:5000/api/students/by-group?group=se-c",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "5000",
+                      "path": [
+                        "api",
+                        "students",
+                        "by-group"
+                      ],
+                      "query": [
+                        {
+                          "key": "group",
+                          "value": "se-c"
+                        }
+                      ]
+                    }
+                  },
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "327"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Sat, 31 Oct 2026 23:39:20 GMT"
+                    },
+                    {
+                      "key": "Keep-Alive",
+                      "value": "timeout=60"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "[\n  {\n    \"email\": \"kennedy.manzi.std@college.edu\",\n    \"firstName\": \"Kennedy\",\n    \"group\": \"SE-C\",\n    \"id\": \"8cf9d556-f605-4ae6-94dc-dba6a1f370e0\",\n    \"lastName\": \"Manzi\",\n    \"regNumber\": \"24-2271\"\n  },\n  {\n    \"email\": \"aline.mutesi.std@college.edu\",\n    \"firstName\": \"Aline\",\n    \"group\": \"SE-C\",\n    \"id\": \"3c0305eb-1497-415e-88c3-d1aba5684734\",\n    \"lastName\": \"Mutesi\",\n    \"regNumber\": \"24-2272\"\n  }\n]"
+                }
+              ]
+            },
+            {
+              "name": "B2",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/api/grade-claims/by-status?status=SUBMITTED",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "grade-claims",
+                    "by-status"
+                  ],
+                  "query": [
+                    {
+                      "key": "status",
+                      "value": "SUBMITTED"
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "B2",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost:5000/api/grade-claims/by-status?status=SUBMITTED",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "5000",
+                      "path": [
+                        "api",
+                        "grade-claims",
+                        "by-status"
+                      ],
+                      "query": [
+                        {
+                          "key": "status",
+                          "value": "SUBMITTED"
+                        }
+                      ]
+                    }
+                  },
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "2127"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Sat, 31 Oct 2026 23:40:15 GMT"
+                    },
+                    {
+                      "key": "Keep-Alive",
+                      "value": "timeout=60"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "[\n  {\n    \"assessmentItem\": \"Quiz 1\",\n    \"claimDate\": \"2026-10-20\",\n    \"description\": \"Claim 02 - check quiz mark\",\n    \"id\": \"7bf6ba9c-268e-44e5-81d8-e52c7fb74812\",\n    \"lecturer\": {\n      \"courses\": [\n        {\n          \"id\": \"1b66f508-aa1f-46de-991d-61d11dead71e\",\n          \"name\": \"Web Technology\"\n        },\n        {\n          \"id\": \"60d3e572-b790-4ab3-84ec-7b63abec05c4\",\n          \"name\": \"Database Systems\"\n        }\n      ],\n      \"email\": \"aline.mukamana@college.com\",\n      \"firstName\": \"Aline\",\n      \"id\": \"ec83d7d0-efa7-4148-942d-63a5ba72eff1\",\n      \"lastName\": \"Mukamana\",\n      \"staffRoom\": {\n        \"id\": \"3afa3a89-71f0-4259-bb34-2b3e07518338\",\n        \"name\": \"Room 301\",\n        \"roomNumber\": \"301\"\n      }\n    },\n    \"status\": \"SUBMITTED\",\n    \"student\": {\n      \"email\": \"aline.mutesi.std@college.edu\",\n      \"firstName\": \"Aline\",\n      \"group\": \"SE-C\",\n      \"id\": \"3c0305eb-1497-415e-88c3-d1aba5684734\",\n      \"lastName\": \"Mutesi\",\n      \"regNumber\": \"24-2272\"\n    }\n  },\n  {\n    \"assessmentItem\": \"Assignment 3\",\n    \"claimDate\": \"2026-11-08\",\n    \"description\": \"Claim 07 - check recorded mark\",\n    \"id\": \"d5d28611-47a8-4128-a991-bcefbbc832d5\",\n    \"lecturer\": {\n      \"courses\": [\n        {\n          \"id\": \"1b66f508-aa1f-46de-991d-61d11dead71e\",\n          \"name\": \"Web Technology\"\n        },\n        {\n          \"id\": \"60d3e572-b790-4ab3-84ec-7b63abec05c4\",\n          \"name\": \"Database Systems\"\n        }\n      ],\n      \"email\": \"aline.mukamana@college.com\",\n      \"firstName\": \"Aline\",\n      \"id\": \"ec83d7d0-efa7-4148-942d-63a5ba72eff1\",\n      \"lastName\": \"Mukamana\",\n      \"staffRoom\": {\n        \"id\": \"3afa3a89-71f0-4259-bb34-2b3e07518338\",\n        \"name\": \"Room 301\",\n        \"roomNumber\": \"301\"\n      }\n    },\n    \"status\": \"SUBMITTED\",\n    \"student\": {\n      \"email\": \"gordon.muhirwa.std@college.edu\",\n      \"firstName\": \"Gordon\",\n      \"group\": \"SE-B\",\n      \"id\": \"c40ce8fb-aab2-43f3-acb0-8e9880021741\",\n      \"lastName\": \"Muhirwa\",\n      \"regNumber\": \"24-2274\"\n    }\n  },\n  {\n    \"assessmentItem\": \"Data Structures Assignment\",\n    \"claimDate\": \"2026-11-11\",\n    \"description\": \"Claim 10 - verify assignment mark\",\n    \"id\": \"24b4f40f-014f-40e7-b9ae-62bd5af09297\",\n    \"lecturer\": {\n      \"courses\": [\n        {\n          \"id\": \"478bf199-5ac8-4156-9fde-86515308197b\",\n          \"name\": \"Data Structures\"\n        }\n      ],\n      \"email\": \"jean.niyonsenga@college.edu\",\n      \"firstName\": \"Jean\",\n      \"id\": \"2c78e0eb-3cb3-4056-9525-ff4870465d72\",\n      \"lastName\": \"Niyonsenga\",\n      \"staffRoom\": {\n        \"id\": \"b918ae55-0427-43e8-9716-2b1d28e3aa54\",\n        \"name\": \"Room 302\",\n        \"roomNumber\": \"302\"\n      }\n    },\n    \"status\": \"SUBMITTED\",\n    \"student\": {\n      \"email\": \"aline.mutesi.std@college.edu\",\n      \"firstName\": \"Aline\",\n      \"group\": \"SE-C\",\n      \"id\": \"3c0305eb-1497-415e-88c3-d1aba5684734\",\n      \"lastName\": \"Mutesi\",\n      \"regNumber\": \"24-2272\"\n    }\n  }\n]"
+                }
+              ]
+            },
+            {
+              "name": "B3",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/api/grade-claims/between?start=2026-10-01&end=2026-10-31",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "grade-claims",
+                    "between"
+                  ],
+                  "query": [
+                    {
+                      "key": "start",
+                      "value": "2026-10-01"
+                    },
+                    {
+                      "key": "end",
+                      "value": "2026-10-31"
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "B3",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost:5000/api/grade-claims/between?start=2026-10-01&end=2026-10-31",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "5000",
+                      "path": [
+                        "api",
+                        "grade-claims",
+                        "between"
+                      ],
+                      "query": [
+                        {
+                          "key": "start",
+                          "value": "2026-10-01"
+                        },
+                        {
+                          "key": "end",
+                          "value": "2026-10-31"
+                        }
+                      ]
+                    }
+                  },
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "1452"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Sat, 31 Oct 2026 23:41:20 GMT"
+                    },
+                    {
+                      "key": "Keep-Alive",
+                      "value": "timeout=60"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "[\n  {\n    \"assessmentItem\": \"Assignment 1\",\n    \"claimDate\": \"2026-10-20\",\n    \"description\": \"Claim 01 - review assignment mark\",\n    \"id\": \"48332e35-3023-40ad-b59d-ee3c8f28678f\",\n    \"lecturer\": {\n      \"courses\": [\n        {\n          \"id\": \"1b66f508-aa1f-46de-991d-61d11dead71e\",\n          \"name\": \"Web Technology\"\n        },\n        {\n          \"id\": \"60d3e572-b790-4ab3-84ec-7b63abec05c4\",\n          \"name\": \"Database Systems\"\n        }\n      ],\n      \"email\": \"aline.mukamana@college.com\",\n      \"firstName\": \"Aline\",\n      \"id\": \"ec83d7d0-efa7-4148-942d-63a5ba72eff1\",\n      \"lastName\": \"Mukamana\",\n      \"staffRoom\": {\n        \"id\": \"3afa3a89-71f0-4259-bb34-2b3e07518338\",\n        \"name\": \"Room 301\",\n        \"roomNumber\": \"301\"\n      }\n    },\n    \"status\": \"DISMISSED\",\n    \"student\": {\n      \"email\": \"kennedy.manzi.std@college.edu\",\n      \"firstName\": \"Kennedy\",\n      \"group\": \"SE-C\",\n      \"id\": \"8cf9d556-f605-4ae6-94dc-dba6a1f370e0\",\n      \"lastName\": \"Manzi\",\n      \"regNumber\": \"24-2271\"\n    }\n  },\n  {\n    \"assessmentItem\": \"Quiz 1\",\n    \"claimDate\": \"2026-10-20\",\n    \"description\": \"Claim 02 - check quiz mark\",\n    \"id\": \"7bf6ba9c-268e-44e5-81d8-e52c7fb74812\",\n    \"lecturer\": {\n      \"courses\": [\n        {\n          \"id\": \"1b66f508-aa1f-46de-991d-61d11dead71e\",\n          \"name\": \"Web Technology\"\n        },\n        {\n          \"id\": \"60d3e572-b790-4ab3-84ec-7b63abec05c4\",\n          \"name\": \"Database Systems\"\n        }\n      ],\n      \"email\": \"aline.mukamana@college.com\",\n      \"firstName\": \"Aline\",\n      \"id\": \"ec83d7d0-efa7-4148-942d-63a5ba72eff1\",\n      \"lastName\": \"Mukamana\",\n      \"staffRoom\": {\n        \"id\": \"3afa3a89-71f0-4259-bb34-2b3e07518338\",\n        \"name\": \"Room 301\",\n        \"roomNumber\": \"301\"\n      }\n    },\n    \"status\": \"SUBMITTED\",\n    \"student\": {\n      \"email\": \"aline.mutesi.std@college.edu\",\n      \"firstName\": \"Aline\",\n      \"group\": \"SE-C\",\n      \"id\": \"3c0305eb-1497-415e-88c3-d1aba5684734\",\n      \"lastName\": \"Mutesi\",\n      \"regNumber\": \"24-2272\"\n    }\n  }\n]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PART-C",
+          "item": [
+            {
+              "name": "C1",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/api/lecturers/by-course?name=Web Technology",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "lecturers",
+                    "by-course"
+                  ],
+                  "query": [
+                    {
+                      "key": "name",
+                      "value": "Web Technology"
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "C1",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost:5000/api/lecturers/by-course?name=Web Technology",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "5000",
+                      "path": [
+                        "api",
+                        "lecturers",
+                        "by-course"
+                      ],
+                      "query": [
+                        {
+                          "key": "name",
+                          "value": "Web Technology"
+                        }
+                      ]
+                    }
+                  },
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "375"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Sat, 31 Oct 2026 23:46:13 GMT"
+                    },
+                    {
+                      "key": "Keep-Alive",
+                      "value": "timeout=60"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "[\n  {\n    \"courses\": [\n      {\n        \"id\": \"1b66f508-aa1f-46de-991d-61d11dead71e\",\n        \"name\": \"Web Technology\"\n      },\n      {\n        \"id\": \"60d3e572-b790-4ab3-84ec-7b63abec05c4\",\n        \"name\": \"Database Systems\"\n      }\n    ],\n    \"email\": \"aline.mukamana@college.com\",\n    \"firstName\": \"Aline\",\n    \"id\": \"ec83d7d0-efa7-4148-942d-63a5ba72eff1\",\n    \"lastName\": \"Mukamana\",\n    \"staffRoom\": {\n      \"id\": \"3afa3a89-71f0-4259-bb34-2b3e07518338\",\n      \"name\": \"Room 301\",\n      \"roomNumber\": \"301\"\n    }\n  }\n]"
+                }
+              ]
+            },
+            {
+              "name": "C2",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/api/staff-rooms/free",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "staff-rooms",
+                    "free"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "C2",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost:5000/api/staff-rooms/free",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "5000",
+                      "path": [
+                        "api",
+                        "staff-rooms",
+                        "free"
+                      ]
+                    }
+                  },
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "84"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Sat, 31 Oct 2026 23:47:42 GMT"
+                    },
+                    {
+                      "key": "Keep-Alive",
+                      "value": "timeout=60"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "[\n  {\n    \"id\": \"bff11994-2a61-4333-9100-a42c3422640e\",\n    \"name\": \"Room 304\",\n    \"roomNumber\": \"304\"\n  }\n]"
+                }
+              ]
+            },
+            {
+              "name": "C3",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/api/courses/unused",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "courses",
+                    "unused"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "unused-courses",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost:5000/api/courses/unused",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "5000",
+                      "path": [
+                        "api",
+                        "courses",
+                        "unused"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "74"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Sun, 01 Nov 2026 01:01:19 GMT"
+                    },
+                    {
+                      "key": "Keep-Alive",
+                      "value": "timeout=60"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "[\n  {\n    \"id\": \"11c12e16-6527-4e68-aad3-5c711f712344\",\n    \"name\": \"Operating Systems\"\n  }\n]"
+                }
+              ]
+            },
+            {
+              "name": "C4",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/api/students/of-lecturer/{{lecturerAlineId}}",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "students",
+                    "of-lecturer",
+                    "{{lecturerAlineId}}"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "C4",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost:5000/api/students/of-lecturer/{{lecturerAlineId}}",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "5000",
+                      "path": [
+                        "api",
+                        "students",
+                        "of-lecturer",
+                        "{{lecturerAlineId}}"
+                      ]
+                    }
+                  },
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    },
+                    {
+                      "key": "Transfer-Encoding",
+                      "value": "chunked"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Sat, 31 Oct 2026 23:49:55 GMT"
+                    },
+                    {
+                      "key": "Keep-Alive",
+                      "value": "timeout=60"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "[\n  {\n    \"email\": \"aline.mutesi.std@college.edu\",\n    \"firstName\": \"Aline\",\n    \"group\": \"SE-C\",\n    \"id\": \"3c0305eb-1497-415e-88c3-d1aba5684734\",\n    \"lastName\": \"Mutesi\",\n    \"regNumber\": \"24-2272\"\n  },\n  {\n    \"email\": \"kennedy.manzi.std@college.edu\",\n    \"firstName\": \"Kennedy\",\n    \"group\": \"SE-C\",\n    \"id\": \"8cf9d556-f605-4ae6-94dc-dba6a1f370e0\",\n    \"lastName\": \"Manzi\",\n    \"regNumber\": \"24-2271\"\n  },\n  {\n    \"email\": \"gordon.muhirwa.std@college.edu\",\n    \"firstName\": \"Gordon\",\n    \"group\": \"SE-B\",\n    \"id\": \"c40ce8fb-aab2-43f3-acb0-8e9880021741\",\n    \"lastName\": \"Muhirwa\",\n    \"regNumber\": \"24-2274\"\n  }\n]"
+                }
+              ]
+            },
+            {
+              "name": "missing_id_case",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/api/students/of-lecturer/00000000-0000-0000-0000-000000000000",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "students",
+                    "of-lecturer",
+                    "00000000-0000-0000-0000-000000000000"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "missing_id_case",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost:5000/api/students/of-lecturer/00000000-0000-0000-0000-000000000000",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "5000",
+                      "path": [
+                        "api",
+                        "students",
+                        "of-lecturer",
+                        "00000000-0000-0000-0000-000000000000"
+                      ]
+                    }
+                  },
+                  "_postman_previewlanguage": "text",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "text/plain;charset=UTF-8"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "40"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Sat, 31 Oct 2026 23:53:31 GMT"
+                    },
+                    {
+                      "key": "Keep-Alive",
+                      "value": "timeout=60"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "The lecturer with that id does not exist"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PART-D",
+          "item": [
+            {
+              "name": "D1",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"claimDate\":\"2026-11-04\",\r\n    \"status\":\"SUBMITTED\",\r\n    \"assessmentItem\":\"Duplicate date test\",\r\n    \"description\":\"D1 duplicate date test\",\r\n    \"student\":{\"id\":\"{{studentEricId}}\"},\r\n    \"lecturer\":{\"id\":\"{{lecturerAlineId}}\"}\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:5000/api/grade-claims/save",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "grade-claims",
+                    "save"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "D1",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n\"claimDate\":\"2026-10-30\",\r\n\"status\":\"SUBMITTED\",\r\n\"assessmentItem\":\"Past date test\",\r\n\"description\":\"D1 past date test\",\r\n\"student\":{\"id\":\"{{studentEricId}}\"},\r\n\"lecturer\":{\"id\":\"{{lecturerAlineId}}\"}\r\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "http://localhost:5000/api/grade-claims/save",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "5000",
+                      "path": [
+                        "api",
+                        "grade-claims",
+                        "save"
+                      ]
+                    }
+                  },
+                  "_postman_previewlanguage": "text",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "text/plain;charset=UTF-8"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "38"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Sat, 31 Oct 2026 23:57:52 GMT"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "close"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "Grade claim date cannot be in the past"
+                },
+                {
+                  "name": "D1-1",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n    \"claimDate\":\"2026-11-04\",\r\n    \"status\":\"SUBMITTED\",\r\n    \"assessmentItem\":\"Duplicate date test\",\r\n    \"description\":\"D1 duplicate date test\",\r\n    \"student\":{\"id\":\"{{studentEricId}}\"},\r\n    \"lecturer\":{\"id\":\"{{lecturerAlineId}}\"}\r\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "http://localhost:5000/api/grade-claims/save",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "5000",
+                      "path": [
+                        "api",
+                        "grade-claims",
+                        "save"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "text",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "text/plain;charset=UTF-8"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "56"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Sun, 01 Nov 2026 00:02:01 GMT"
+                    },
+                    {
+                      "key": "Keep-Alive",
+                      "value": "timeout=60"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "Lecturer already has a claim to investigate on that date"
+                }
+              ]
+            },
+            {
+              "name": "D2-status-flow",
+              "request": {
+                "method": "PATCH",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/api/grade-claims/00000000-0000-0000-0000-000000000000/status?status=INVESTIGATING",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "grade-claims",
+                    "00000000-0000-0000-0000-000000000000",
+                    "status"
+                  ],
+                  "query": [
+                    {
+                      "key": "status",
+                      "value": "INVESTIGATING"
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "success",
+                  "originalRequest": {
+                    "method": "PATCH",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost:5000/api/grade-claims/{{claim07}}/status?status=INVESTIGATING",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "5000",
+                      "path": [
+                        "api",
+                        "grade-claims",
+                        "{{claim07}}",
+                        "status"
+                      ],
+                      "query": [
+                        {
+                          "key": "status",
+                          "value": "INVESTIGATING"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "text",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "text/plain;charset=UTF-8"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "39"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Sun, 01 Nov 2026 00:05:44 GMT"
+                    },
+                    {
+                      "key": "Keep-Alive",
+                      "value": "timeout=60"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "Grade claim status updated successfully"
+                },
+                {
+                  "name": "Invalid-move",
+                  "originalRequest": {
+                    "method": "PATCH",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost:5000/api/grade-claims/{{claim01}}/status?status=INVESTIGATING",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "5000",
+                      "path": [
+                        "api",
+                        "grade-claims",
+                        "{{claim01}}",
+                        "status"
+                      ],
+                      "query": [
+                        {
+                          "key": "status",
+                          "value": "INVESTIGATING"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "text",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "text/plain;charset=UTF-8"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "52"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Sun, 01 Nov 2026 00:07:00 GMT"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "close"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "Cannot change status from DISMISSED to INVESTIGATING"
+                },
+                {
+                  "name": "Missing-id",
+                  "originalRequest": {
+                    "method": "PATCH",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost:5000/api/grade-claims/00000000-0000-0000-0000-000000000000/status?status=INVESTIGATING",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "5000",
+                      "path": [
+                        "api",
+                        "grade-claims",
+                        "00000000-0000-0000-0000-000000000000",
+                        "status"
+                      ],
+                      "query": [
+                        {
+                          "key": "status",
+                          "value": "INVESTIGATING"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "text",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "text/plain;charset=UTF-8"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "43"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Sun, 01 Nov 2026 00:08:14 GMT"
+                    },
+                    {
+                      "key": "Keep-Alive",
+                      "value": "timeout=60"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "The grade claim with that id does not exist"
+                }
+              ]
+            },
+            {
+              "name": "D3",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/api/lecturers/{{lecturerEric}}/courses/{{courseWebId}}",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "lecturers",
+                    "{{lecturerEric}}",
+                    "courses",
+                    "{{courseWebId}}"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "added",
+                  "originalRequest": {
+                    "method": "PUT",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost:5000/api/lecturers/{{lecturerEric}}/courses/{{courseWebId}}",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "5000",
+                      "path": [
+                        "api",
+                        "lecturers",
+                        "{{lecturerEric}}",
+                        "courses",
+                        "{{courseWebId}}"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "text",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "text/plain;charset=UTF-8"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "28"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Sun, 01 Nov 2026 00:12:03 GMT"
+                    },
+                    {
+                      "key": "Keep-Alive",
+                      "value": "timeout=60"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "Course added to the lecturer"
+                },
+                {
+                  "name": "duplicate",
+                  "originalRequest": {
+                    "method": "PUT",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost:5000/api/lecturers/{{lecturerEric}}/courses/{{courseWebId}}",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "5000",
+                      "path": [
+                        "api",
+                        "lecturers",
+                        "{{lecturerEric}}",
+                        "courses",
+                        "{{courseWebId}}"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "text",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "text/plain;charset=UTF-8"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "36"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Sun, 01 Nov 2026 00:12:42 GMT"
+                    },
+                    {
+                      "key": "Keep-Alive",
+                      "value": "timeout=60"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "The lecturer already has that course"
+                }
+              ]
+            },
+            {
+              "name": "D4",
+              "request": {
+                "method": "PATCH",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/api/lecturers/{{lecturerAlineId}}/staff-room?roomNumber=302",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "lecturers",
+                    "{{lecturerAlineId}}",
+                    "staff-room"
+                  ],
+                  "query": [
+                    {
+                      "key": "roomNumber",
+                      "value": "302"
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "staff-room-changed",
+                  "originalRequest": {
+                    "method": "PATCH",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost:5000/api/lecturers/{{lecturerAlineId}}/staff-room?roomNumber=304",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "5000",
+                      "path": [
+                        "api",
+                        "lecturers",
+                        "{{lecturerAlineId}}",
+                        "staff-room"
+                      ],
+                      "query": [
+                        {
+                          "key": "roomNumber",
+                          "value": "304"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "text",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "text/plain;charset=UTF-8"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "31"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Sun, 01 Nov 2026 00:14:22 GMT"
+                    },
+                    {
+                      "key": "Keep-Alive",
+                      "value": "timeout=60"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "Staff room changed successfully"
+                },
+                {
+                  "name": "room-already-taken",
+                  "originalRequest": {
+                    "method": "PATCH",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost:5000/api/lecturers/{{lecturerAlineId}}/staff-room?roomNumber=302",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "5000",
+                      "path": [
+                        "api",
+                        "lecturers",
+                        "{{lecturerAlineId}}",
+                        "staff-room"
+                      ],
+                      "query": [
+                        {
+                          "key": "roomNumber",
+                          "value": "302"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "text",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "text/plain;charset=UTF-8"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "44"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Sun, 01 Nov 2026 00:15:41 GMT"
+                    },
+                    {
+                      "key": "Keep-Alive",
+                      "value": "timeout=60"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "That staff room is taken by another lecturer"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PART-E",
+          "item": [
+            {
+              "name": "E1",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"assessmentName\":\"Database Lab\",\r\n    \"comment\":\"Mark was entered for the wrong student\",\r\n    \"newMark\":18\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:5000/api/grade-corrections/save?gradeClaimId=00000000-0000-0000-0000-000000000000",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "grade-corrections",
+                    "save"
+                  ],
+                  "query": [
+                    {
+                      "key": "gradeClaimId",
+                      "value": "00000000-0000-0000-0000-000000000000"
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "Grade correction saved successfully",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n    \"assessmentName\":\"Database Lab\",\r\n    \"comment\":\"Mark was entered for the wrong student\",\r\n    \"newMark\":18\r\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "http://localhost:5000/api/grade-corrections/save?gradeClaimId={{claim04Id}}",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "5000",
+                      "path": [
+                        "api",
+                        "grade-corrections",
+                        "save"
+                      ],
+                      "query": [
+                        {
+                          "key": "gradeClaimId",
+                          "value": "{{claim04Id}}"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 201,
+                  "_postman_previewlanguage": "text",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "text/plain;charset=UTF-8"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "35"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Sun, 01 Nov 2026 00:19:26 GMT"
+                    },
+                    {
+                      "key": "Keep-Alive",
+                      "value": "timeout=60"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "Grade correction saved successfully"
+                },
+                {
+                  "name": "Grade correction saved successfully",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n    \"assessmentName\":\"Final Project\",\r\n    \"comment\":\"Mark was entered for the wrong student\",\r\n    \"newMark\":38\r\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "http://localhost:5000/api/grade-corrections/save?gradeClaimId={{claim09Id}}",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "5000",
+                      "path": [
+                        "api",
+                        "grade-corrections",
+                        "save"
+                      ],
+                      "query": [
+                        {
+                          "key": "gradeClaimId",
+                          "value": "{{claim09Id}}"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 20,
+                  "_postman_previewlanguage": "text",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "text/plain;charset=UTF-8"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "35"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Sun, 01 Nov 2026 00:24:30 GMT"
+                    },
+                    {
+                      "key": "Keep-Alive",
+                      "value": "timeout=60"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "Grade correction saved successfully"
+                },
+                {
+                  "name": "Grade corrections are only for RESOLVED grade claims",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n    \"assessmentName\":\"Database Lab\",\r\n    \"comment\":\"Mark was entered for the wrong student\",\r\n    \"newMark\":18\r\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "http://localhost:5000/api/grade-corrections/save?gradeClaimId={{claim01Id}}",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "5000",
+                      "path": [
+                        "api",
+                        "grade-corrections",
+                        "save"
+                      ],
+                      "query": [
+                        {
+                          "key": "gradeClaimId",
+                          "value": "{{claim01Id}}"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "text",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "text/plain;charset=UTF-8"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "52"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Sun, 01 Nov 2026 00:33:05 GMT"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "close"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "Grade corrections are only for RESOLVED grade claims"
+                },
+                {
+                  "name": "The grade claim with that id does not exist",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n    \"assessmentName\":\"Database Lab\",\r\n    \"comment\":\"Mark was entered for the wrong student\",\r\n    \"newMark\":18\r\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "http://localhost:5000/api/grade-corrections/save?gradeClaimId=00000000-0000-0000-0000-000000000000",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "5000",
+                      "path": [
+                        "api",
+                        "grade-corrections",
+                        "save"
+                      ],
+                      "query": [
+                        {
+                          "key": "gradeClaimId",
+                          "value": "00000000-0000-0000-0000-000000000000"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "text",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "text/plain;charset=UTF-8"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "43"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Sun, 01 Nov 2026 00:34:51 GMT"
+                    },
+                    {
+                      "key": "Keep-Alive",
+                      "value": "timeout=60"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "The grade claim with that id does not exist"
+                }
+              ]
+            },
+            {
+              "name": "E2",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/api/grade-corrections/student/24-2271",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "grade-corrections",
+                    "student",
+                    "24-2271"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "retrieve-24-2271-collections",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost:5000/api/grade-corrections/student/24-2271",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "5000",
+                      "path": [
+                        "api",
+                        "grade-corrections",
+                        "student",
+                        "24-2271"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "1670"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Sun, 01 Nov 2026 00:30:02 GMT"
+                    },
+                    {
+                      "key": "Keep-Alive",
+                      "value": "timeout=60"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "[\n  {\n    \"assessmentName\": \"Database Lab\",\n    \"comment\": \"Mark was entered for the wrong student\",\n    \"correctionDate\": null,\n    \"gradeClaim\": {\n      \"assessmentItem\": \"Database Lab\",\n      \"claimDate\": \"2026-11-05\",\n      \"description\": \"Claim 04 - correct lab mark\",\n      \"id\": \"bf234847-1081-4b84-93aa-8f7d20d9f200\",\n      \"lecturer\": {\n        \"courses\": [\n          {\n            \"id\": \"478bf199-5ac8-4156-9fde-86515308197b\",\n            \"name\": \"Data Structures\"\n          }\n        ],\n        \"email\": \"jean.niyonsenga@college.edu\",\n        \"firstName\": \"Jean\",\n        \"id\": \"2c78e0eb-3cb3-4056-9525-ff4870465d72\",\n        \"lastName\": \"Niyonsenga\",\n        \"staffRoom\": {\n          \"id\": \"b918ae55-0427-43e8-9716-2b1d28e3aa54\",\n          \"name\": \"Room 302\",\n          \"roomNumber\": \"302\"\n        }\n      },\n      \"status\": \"RESOLVED\",\n      \"student\": {\n        \"email\": \"kennedy.manzi.std@college.edu\",\n        \"firstName\": \"Kennedy\",\n        \"group\": \"SE-C\",\n        \"id\": \"8cf9d556-f605-4ae6-94dc-dba6a1f370e0\",\n        \"lastName\": \"Manzi\",\n        \"regNumber\": \"24-2271\"\n      }\n    },\n    \"id\": \"fa66df4a-b6c6-4eed-a2ad-00a59357f5ed\",\n    \"newMark\": 18\n  },\n  {\n    \"assessmentName\": \"Final Project\",\n    \"comment\": \"Mark was entered for the wrong student\",\n    \"correctionDate\": null,\n    \"gradeClaim\": {\n      \"assessmentItem\": \"Final Project\",\n      \"claimDate\": \"2026-11-10\",\n      \"description\": \"Claim 09 - correct project mark\",\n      \"id\": \"12253306-f635-4aea-9665-f53fd9f89290\",\n      \"lecturer\": {\n        \"courses\": [\n          {\n            \"id\": \"1b66f508-aa1f-46de-991d-61d11dead71e\",\n            \"name\": \"Web Technology\"\n          }\n        ],\n        \"email\": \"eric.habimana@college.edu\",\n        \"firstName\": \"Eric\",\n        \"id\": \"b1195f36-0954-4395-bd30-9d8a83368b54\",\n        \"lastName\": \"Habimana\",\n        \"staffRoom\": {\n          \"id\": \"989a0214-7d5a-4d33-a7f5-0dd0a5cb44ee\",\n          \"name\": \"Room 303\",\n          \"roomNumber\": \"303\"\n        }\n      },\n      \"status\": \"RESOLVED\",\n      \"student\": {\n        \"email\": \"kennedy.manzi.std@college.edu\",\n        \"firstName\": \"Kennedy\",\n        \"group\": \"SE-C\",\n        \"id\": \"8cf9d556-f605-4ae6-94dc-dba6a1f370e0\",\n        \"lastName\": \"Manzi\",\n        \"regNumber\": \"24-2271\"\n      }\n    },\n    \"id\": \"109a9f1a-d329-4dea-85be-6a83ba5fb547\",\n    \"newMark\": 38\n  }\n]"
+                }
+              ]
+            },
+            {
+              "name": "E3",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/api/grade-corrections/delete/{{correctionId}}",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "grade-corrections",
+                    "delete",
+                    "{{correctionId}}"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "Before removing a correction",
+                  "originalRequest": {
+                    "method": "DELETE",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost:5000/api/grade-claims/delete/{{claim04Id}}",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "5000",
+                      "path": [
+                        "api",
+                        "grade-claims",
+                        "delete",
+                        "{{claim04Id}}"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "text",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "text/plain;charset=UTF-8"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "57"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Sun, 01 Nov 2026 00:36:05 GMT"
+                    },
+                    {
+                      "key": "Keep-Alive",
+                      "value": "timeout=60"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "That grade claim has grade corrections, delete them first"
+                },
+                {
+                  "name": "Delete one correction",
+                  "originalRequest": {
+                    "method": "DELETE",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost:5000/api/grade-corrections/delete/{{correctionId}}",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "5000",
+                      "path": [
+                        "api",
+                        "grade-corrections",
+                        "delete",
+                        "{{correctionId}}"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "text",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "text/plain;charset=UTF-8"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "37"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Sun, 01 Nov 2026 00:39:52 GMT"
+                    },
+                    {
+                      "key": "Keep-Alive",
+                      "value": "timeout=60"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "Grade correction deleted successfully"
+                },
+                {
+                  "name": "grade correction with that id does not exist",
+                  "originalRequest": {
+                    "method": "DELETE",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost:5000/api/grade-corrections/delete/{{correctionId}}",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "5000",
+                      "path": [
+                        "api",
+                        "grade-corrections",
+                        "delete",
+                        "{{correctionId}}"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "text",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "text/plain;charset=UTF-8"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "48"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Sun, 01 Nov 2026 00:40:54 GMT"
+                    },
+                    {
+                      "key": "Keep-Alive",
+                      "value": "timeout=60"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "The grade correction with that id does not exist"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PART-F(reports and bulk update)",
+          "item": [
+            {
+              "name": "F1-counts by status",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/api/grade-claims/stats/by-status",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "grade-claims",
+                    "stats",
+                    "by-status"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "counts by status",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost:5000/api/grade-claims/stats/by-status",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "5000",
+                      "path": [
+                        "api",
+                        "grade-claims",
+                        "stats",
+                        "by-status"
+                      ]
+                    }
+                  },
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "68"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Sun, 01 Nov 2026 00:43:22 GMT"
+                    },
+                    {
+                      "key": "Keep-Alive",
+                      "value": "timeout=60"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "[\n  [\n    \"RESOLVED\",\n    3\n  ],\n  [\n    \"INVESTIGATING\",\n    3\n  ],\n  [\n    \"DISMISSED\",\n    2\n  ],\n  [\n    \"SUBMITTED\",\n    2\n  ]\n]"
+                }
+              ]
+            },
+            {
+              "name": "F2-cancel a lecturer's claims for a date",
+              "request": {
+                "method": "PATCH",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/api/grade-claims/cancel-day?lecturerId={{lecturerAlineId}}&date=2026-10-20",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "grade-claims",
+                    "cancel-day"
+                  ],
+                  "query": [
+                    {
+                      "key": "lecturerId",
+                      "value": "{{lecturerAlineId}}"
+                    },
+                    {
+                      "key": "date",
+                      "value": "2026-10-20"
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "F2-cancel a lecturer's claims for a date",
+                  "originalRequest": {
+                    "method": "PATCH",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost:5000/api/grade-claims/cancel-day?lecturerId={{lecturerAlineId}}&date=2026-10-20",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "5000",
+                      "path": [
+                        "api",
+                        "grade-claims",
+                        "cancel-day"
+                      ],
+                      "query": [
+                        {
+                          "key": "lecturerId",
+                          "value": "{{lecturerAlineId}}"
+                        },
+                        {
+                          "key": "date",
+                          "value": "2026-10-20"
+                        }
+                      ]
+                    }
+                  },
+                  "_postman_previewlanguage": "text",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "text/plain;charset=UTF-8"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "24"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Sun, 01 Nov 2026 00:46:21 GMT"
+                    },
+                    {
+                      "key": "Keep-Alive",
+                      "value": "timeout=60"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "2 grade claims cancelled"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bonus requests",
+          "item": [
+            {
+              "name": "Dashboard",
+              "item": [
+                {
+                  "name": "Summary",
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost:5000/api/dashboard/summary",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "5000",
+                      "path": [
+                        "api",
+                        "dashboard",
+                        "summary"
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "Summary",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:5000/api/dashboard/summary",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "5000",
+                          "path": [
+                            "api",
+                            "dashboard",
+                            "summary"
+                          ]
+                        }
+                      },
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "93"
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Sun, 01 Nov 2026 00:48:58 GMT"
+                        },
+                        {
+                          "key": "Keep-Alive",
+                          "value": "timeout=60"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n  \"students\": 5,\n  \"lecturers\": 3,\n  \"freeStaffRooms\": 1,\n  \"claimsToday\": 0,\n  \"submitted\": 1,\n  \"corrections\": 1\n}"
+                    }
+                  ]
+                },
+                {
+                  "name": "Page",
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost:5000/api/grade-claims/page?page=0&size=5&sort=claimDate,desc",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "5000",
+                      "path": [
+                        "api",
+                        "grade-claims",
+                        "page"
+                      ],
+                      "query": [
+                        {
+                          "key": "page",
+                          "value": "0"
+                        },
+                        {
+                          "key": "size",
+                          "value": "5"
+                        },
+                        {
+                          "key": "sort",
+                          "value": "claimDate,desc"
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "Page",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:5000/api/grade-claims/page?page=0&size=5&sort=claimDate,desc",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "5000",
+                          "path": [
+                            "api",
+                            "grade-claims",
+                            "page"
+                          ],
+                          "query": [
+                            {
+                              "key": "page",
+                              "value": "0"
+                            },
+                            {
+                              "key": "size",
+                              "value": "5"
+                            },
+                            {
+                              "key": "sort",
+                              "value": "claimDate,desc"
+                            }
+                          ]
+                        }
+                      },
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "3714"
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Sun, 01 Nov 2026 00:50:16 GMT"
+                        },
+                        {
+                          "key": "Keep-Alive",
+                          "value": "timeout=60"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n  \"content\": [\n    {\n      \"assessmentItem\": \"Data Structures Assignment\",\n      \"claimDate\": \"2026-11-11\",\n      \"description\": \"Claim 10 - verify assignment mark\",\n      \"id\": \"24b4f40f-014f-40e7-b9ae-62bd5af09297\",\n      \"lecturer\": {\n        \"courses\": [\n          {\n            \"id\": \"478bf199-5ac8-4156-9fde-86515308197b\",\n            \"name\": \"Data Structures\"\n          }\n        ],\n        \"email\": \"jean.niyonsenga@college.edu\",\n        \"firstName\": \"Jean\",\n        \"id\": \"2c78e0eb-3cb3-4056-9525-ff4870465d72\",\n        \"lastName\": \"Niyonsenga\",\n        \"staffRoom\": {\n          \"id\": \"b918ae55-0427-43e8-9716-2b1d28e3aa54\",\n          \"name\": \"Room 302\",\n          \"roomNumber\": \"302\"\n        }\n      },\n      \"status\": \"SUBMITTED\",\n      \"student\": {\n        \"email\": \"aline.mutesi.std@college.edu\",\n        \"firstName\": \"Aline\",\n        \"group\": \"SE-C\",\n        \"id\": \"3c0305eb-1497-415e-88c3-d1aba5684734\",\n        \"lastName\": \"Mutesi\",\n        \"regNumber\": \"24-2272\"\n      }\n    },\n    {\n      \"assessmentItem\": \"Final Project\",\n      \"claimDate\": \"2026-11-10\",\n      \"description\": \"Claim 09 - correct project mark\",\n      \"id\": \"12253306-f635-4aea-9665-f53fd9f89290\",\n      \"lecturer\": {\n        \"courses\": [\n          {\n            \"id\": \"1b66f508-aa1f-46de-991d-61d11dead71e\",\n            \"name\": \"Web Technology\"\n          }\n        ],\n        \"email\": \"eric.habimana@college.edu\",\n        \"firstName\": \"Eric\",\n        \"id\": \"b1195f36-0954-4395-bd30-9d8a83368b54\",\n        \"lastName\": \"Habimana\",\n        \"staffRoom\": {\n          \"id\": \"989a0214-7d5a-4d33-a7f5-0dd0a5cb44ee\",\n          \"name\": \"Room 303\",\n          \"roomNumber\": \"303\"\n        }\n      },\n      \"status\": \"RESOLVED\",\n      \"student\": {\n        \"email\": \"kennedy.manzi.std@college.edu\",\n        \"firstName\": \"Kennedy\",\n        \"group\": \"SE-C\",\n        \"id\": \"8cf9d556-f605-4ae6-94dc-dba6a1f370e0\",\n        \"lastName\": \"Manzi\",\n        \"regNumber\": \"24-2271\"\n      }\n    },\n    {\n      \"assessmentItem\": \"Database Quiz\",\n      \"claimDate\": \"2026-11-09\",\n      \"description\": \"Claim 08 - review database quiz\",\n      \"id\": \"19e7a45e-9f51-49fc-802e-e0feb665ec11\",\n      \"lecturer\": {\n        \"courses\": [\n          {\n            \"id\": \"478bf199-5ac8-4156-9fde-86515308197b\",\n            \"name\": \"Data Structures\"\n          }\n        ],\n        \"email\": \"jean.niyonsenga@college.edu\",\n        \"firstName\": \"Jean\",\n        \"id\": \"2c78e0eb-3cb3-4056-9525-ff4870465d72\",\n        \"lastName\": \"Niyonsenga\",\n        \"staffRoom\": {\n          \"id\": \"b918ae55-0427-43e8-9716-2b1d28e3aa54\",\n          \"name\": \"Room 302\",\n          \"roomNumber\": \"302\"\n        }\n      },\n      \"status\": \"DISMISSED\",\n      \"student\": {\n        \"email\": \"happy.uwineza.std@college.edu\",\n        \"firstName\": \"Happy\",\n        \"group\": \"SE-D\",\n        \"id\": \"a64e16b2-cb86-4f84-a128-49a82dc090a3\",\n        \"lastName\": \"Uwineza\",\n        \"regNumber\": \"24-2275\"\n      }\n    },\n    {\n      \"assessmentItem\": \"Assignment 3\",\n      \"claimDate\": \"2026-11-08\",\n      \"description\": \"Claim 07 - check recorded mark\",\n      \"id\": \"d5d28611-47a8-4128-a991-bcefbbc832d5\",\n      \"lecturer\": {\n        \"courses\": [\n          {\n            \"id\": \"1b66f508-aa1f-46de-991d-61d11dead71e\",\n            \"name\": \"Web Technology\"\n          },\n          {\n            \"id\": \"60d3e572-b790-4ab3-84ec-7b63abec05c4\",\n            \"name\": \"Database Systems\"\n          }\n        ],\n        \"email\": \"aline.mukamana@college.com\",\n        \"firstName\": \"Aline\",\n        \"id\": \"ec83d7d0-efa7-4148-942d-63a5ba72eff1\",\n        \"lastName\": \"Mukamana\",\n        \"staffRoom\": {\n          \"id\": \"bff11994-2a61-4333-9100-a42c3422640e\",\n          \"name\": \"Room 304\",\n          \"roomNumber\": \"304\"\n        }\n      },\n      \"status\": \"INVESTIGATING\",\n      \"student\": {\n        \"email\": \"gordon.muhirwa.std@college.edu\",\n        \"firstName\": \"Gordon\",\n        \"group\": \"SE-B\",\n        \"id\": \"c40ce8fb-aab2-43f3-acb0-8e9880021741\",\n        \"lastName\": \"Muhirwa\",\n        \"regNumber\": \"24-2274\"\n      }\n    },\n    {\n      \"assessmentItem\": \"Operating Systems Quiz\",\n      \"claimDate\": \"2026-11-07\",\n      \"description\": \"Claim 06 - review quiz result\",\n      \"id\": \"12338ad8-98d2-44cd-bce4-93ea9ea7951a\",\n      \"lecturer\": {\n        \"courses\": [\n          {\n            \"id\": \"1b66f508-aa1f-46de-991d-61d11dead71e\",\n            \"name\": \"Web Technology\"\n          }\n        ],\n        \"email\": \"eric.habimana@college.edu\",\n        \"firstName\": \"Eric\",\n        \"id\": \"b1195f36-0954-4395-bd30-9d8a83368b54\",\n        \"lastName\": \"Habimana\",\n        \"staffRoom\": {\n          \"id\": \"989a0214-7d5a-4d33-a7f5-0dd0a5cb44ee\",\n          \"name\": \"Room 303\",\n          \"roomNumber\": \"303\"\n        }\n      },\n      \"status\": \"INVESTIGATING\",\n      \"student\": {\n        \"email\": \"eric.mbonyi.std@college.edu\",\n        \"firstName\": \"Eric\",\n        \"group\": \"SE-A\",\n        \"id\": \"7ee4bb55-ab52-4295-a34b-16b23b762445\",\n        \"lastName\": \"Mbonyi\",\n        \"regNumber\": \"24-2273\"\n      }\n    }\n  ],\n  \"empty\": false,\n  \"first\": true,\n  \"last\": false,\n  \"number\": 0,\n  \"numberOfElements\": 5,\n  \"pageable\": {\n    \"offset\": 0,\n    \"pageNumber\": 0,\n    \"pageSize\": 5,\n    \"paged\": true,\n    \"sort\": {\n      \"empty\": false,\n      \"sorted\": true,\n      \"unsorted\": false\n    },\n    \"unpaged\": false\n  },\n  \"size\": 5,\n  \"sort\": {\n    \"empty\": false,\n    \"sorted\": true,\n    \"unsorted\": false\n  },\n  \"totalElements\": 10,\n  \"totalPages\": 2\n}"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "correctionId",
+      "value": ""
+    }
+  ]
+}

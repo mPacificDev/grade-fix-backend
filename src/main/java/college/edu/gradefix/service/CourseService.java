@@ -50,6 +50,6 @@ public class CourseService {
     }
 
     public List<Course> unusedCourses() {
-        return courseRepository.findAll();
+        return courseRepository.findUnUsedCourses();
     }
 }
